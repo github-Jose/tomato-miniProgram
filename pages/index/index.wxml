@@ -1,13 +1,15 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  <scroll-view class='scroll-container' scroll-y="true">
+    <view class='todo-list'>
+      <view class='circle'></view>
+      <text>我是todolist</text>
+    </view>
+  </scroll-view>
 </view>
+
+<!-- <my-button innerText="我的按钮" mini="{{true}}" noBackground="{{true}}" bindhandleClick="handleClick"></my-button> -->
+
+  <!-- <my-toast placeholder="我今天做了什么" justConfirm="{{false}}" wx:if="{{!hideMyToast}}" bindconfirm="confirm" bindcancel="cancel"></my-toast> -->
+
+  <!-- <my-tomato innerText="点击开始番茄"></my-tomato> -->

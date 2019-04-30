@@ -1,0 +1,8 @@
+<!--components/my-toast/my-toast.wxml-->
+<view class="my-toast {{justConfirm && 'just-confirm'}}">
+  <input class='reason' value='{{reason}}' bindinput='changeValue' placeholder='{{placeholder}}' placeholder-class='input-placeholder'></input>
+  <view class='some-button'>
+    <view class='confirm' bindtap='confirm'>确定</view>
+    <view class='cancel' wx:if="{{!justConfirm}}" bindtap='cancel'>取消</view>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "my-button": "../../components/my-button/my-button",
+    "my-toast": "../../components/my-toast/my-toast",
+    "my-tomato": "../../components/my-tomato/my-tomato"
+  }
+}

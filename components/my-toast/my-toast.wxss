@@ -1,0 +1,47 @@
+/* components/my-toast/my-toast.wxss */
+.my-toast {
+  width: 640rpx;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 26rpx 20rpx 0 20rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+}
+.reason {
+  height: 86rpx;
+  background: #F2F2F2;
+  padding-left: 34rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+}
+.input-placeholder {
+  color: #737373;
+  font-size: 28rpx;
+}
+.some-button {
+  display: flex;
+  justify-content: space-around;
+  height: 88rpx;
+  align-items: center;
+}
+.confirm {
+  cursor: pointer;
+  width: 50%;
+  text-align: center;
+  border-right: 1px solid #F6705A;
+}
+.cancel {
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.just-confirm > .reason {
+  height: 132rpx;
+}
+.just-confirm > .some-button > .confirm {
+  border: none;
+}

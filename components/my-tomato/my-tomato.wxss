@@ -1,0 +1,21 @@
+/* components/my-tomato/my-tomato.wxss */
+.tomato {
+  width: 269rpx;
+  height: 269rpx;
+  position: relative;
+}
+image {
+  max-width: 100%;
+}
+.tomato-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 26rpx;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.isTime {
+  font-size: 56rpx;
+}

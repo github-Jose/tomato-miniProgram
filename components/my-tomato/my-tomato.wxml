@@ -1,0 +1,6 @@
+<!--components/my-tomato/my-tomato.wxml-->
+<view class='tomato'>
+  <image src='../../images/tomato.png' mode='widthFix'></image>
+  <text class='tomato-inner' wx:if="{{!isTime}}">{{innerText}}</text>
+  <text class='tomato-inner {{isTime && "isTime"}}' wx:else>{{dealTime}}</text>
+</view>

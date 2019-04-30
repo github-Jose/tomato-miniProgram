@@ -1,0 +1,3 @@
+<view>
+  <button class='default-button {{mini && "mini"}} {{noBackground && "no-background"}} {{noGradient && "no-gradient"}}' bindtap='handleClick'>{{innerText}}</button>
+</view>
