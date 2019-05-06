@@ -1,0 +1,10 @@
+<!--pages/startTomato/startTomato.wxml-->
+<view class='container begin'>
+  <view class='tip'>
+    <text>距结束还有</text>
+  </view>
+  <my-tomato isTime="{{true}}" class="time-tomato" bindtimeEnd="timeEnd" stop="{{stopToamto}}"></my-tomato>
+  <my-button mini="{{true}}" innerText="{{stopToamto ? '开始': '暂停'}}" class='stop' wx:if="{{!oneAgain}}" bindtap='isStop'></my-button>
+  <my-button mini="{{true}}" innerText="放弃" noBackground="{{true}}" class='give-up' wx:if="{{!oneAgain}}"></my-button>
+  <my-button mini="{{true}}" innerText="再来一组" class='one-again' wx:if="{{oneAgain}}" bindtap='goAgain'></my-button>
+</view>

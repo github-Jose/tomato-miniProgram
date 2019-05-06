@@ -7,6 +7,13 @@ Component({
     isTime: {
       type: Boolean,
       value: false
+    },
+    stop: {
+      type: Boolean,
+      value: false,
+      observer: function (e) {
+        e ? this.stopTime() : this.startTime() 
+      }
     }
   },
   data: {
@@ -34,9 +41,16 @@ Component({
         this.setData({ time: this.data.time - 1 })
         this.formatTime(this.data.time)
         if (this.data.time <= 0) {
+          this.tellFather()
           clearInterval(this.data.timer)
         }
       }, 1000)
+    },
+    tellFather () {
+      this.triggerEvent('timeEnd')
+    },
+    stopTime () {
+      clearInterval(this.data.timer)
     }
   },
   attached () {

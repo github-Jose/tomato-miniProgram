@@ -1,15 +1,20 @@
 <!--index.wxml-->
-<view class="container">
+<view class="home-container">
   <scroll-view class='scroll-container' scroll-y="true">
-    <view class='todo-list'>
+    <view class='todo-list' wx:for="{{todoList}}" wx:key="index">
       <view class='circle'></view>
-      <text>我是todolist</text>
+      <text>{{item.text}}</text>
     </view>
   </scroll-view>
+  <!-- tomato -->
+  <view class='create-tomato'>
+    <my-button innerText="创建任务" bindhandleClick="handleClick" class='create-button'>
+    </my-button>
+    <view class='no-login'>
+      <text>尚未登录</text>
+    </view>
+    <my-tomato innerText="点击开始番茄" class="action-tomato" bindtap="test"></my-tomato>
+  </view>
 </view>
 
-<!-- <my-button innerText="我的按钮" mini="{{true}}" noBackground="{{true}}" bindhandleClick="handleClick"></my-button> -->
-
-  <!-- <my-toast placeholder="我今天做了什么" justConfirm="{{false}}" wx:if="{{!hideMyToast}}" bindconfirm="confirm" bindcancel="cancel"></my-toast> -->
-
-  <!-- <my-tomato innerText="点击开始番茄"></my-tomato> -->
+<!-- <my-toast placeholder="我今天做了什么" justConfirm="{{false}}" wx:if="{{!hideMyToast}}" bindconfirm="confirm" bindcancel="cancel"></my-toast> -->

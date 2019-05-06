@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "my-tomato": "../../components/my-tomato/my-tomato",
+    "my-button": "../../components/my-button/my-button"
+  }
+}

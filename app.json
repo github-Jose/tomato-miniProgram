@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
+    "pages/startTomato/startTomato",
     "components/my-button/my-button",
     "components/my-toast/my-toast",
     "components/my-tomato/my-tomato"
@@ -12,5 +13,24 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/home.png",
+        "selectedIconPath": "./images/home-active.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "./images/me.png",
+        "selectedIconPath": "./images/me-active.png"
+      }
+    ],
+    "borderStyle": "white",
+    "color": "#7F8389",
+    "selectedColor": "#F6705A"
+  }
 }

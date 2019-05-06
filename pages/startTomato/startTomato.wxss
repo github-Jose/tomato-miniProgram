@@ -1,0 +1,33 @@
+/* pages/startTomato/startTomato.wxss */
+.begin {
+  overflow: hidden;
+}
+.tip {
+  color: #F87A5F;
+  font-size: 26rpx;
+  text-align: center;
+  margin-top: 179rpx;
+}
+.time-tomato {
+  display: flex;
+  justify-content: center;
+  margin-top: 66rpx;
+}
+.stop {
+  display: flex;
+  width: 360rpx;
+  margin: 0 auto;
+  margin-top: 116rpx;
+}
+.give-up {
+  display: flex;
+  width: 360rpx;
+  margin: 0 auto;
+  margin-top: 48rpx;
+}
+.one-again {
+  display: flex;
+  width: 360rpx;
+  margin: 0 auto;
+  margin-top: 116rpx;
+}
